@@ -13,6 +13,7 @@ public class Motor {
     }
        public void doWork() {
     	   System.out.println("Motor is running......");
+    	   System.out.println("Motor is running......");
        }
        @PreDestroy
    	public void stop() {
