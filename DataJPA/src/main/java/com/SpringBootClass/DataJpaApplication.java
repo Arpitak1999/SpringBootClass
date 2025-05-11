@@ -16,8 +16,8 @@ public class DataJpaApplication {
 		
 		
 		MasterEntity entity =new MasterEntity();
-		entity.setContactId(101);
-		entity.setContactName("Arpita");
+		entity.setContactId(104);
+		entity.setContactName("Arpita4");
 		entity.setContactNum(90908080899L);
 		bean.save(entity);
 		

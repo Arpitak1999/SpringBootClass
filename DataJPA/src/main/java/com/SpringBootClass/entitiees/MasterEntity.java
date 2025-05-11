@@ -24,23 +24,6 @@ public class MasterEntity {
 	@Column(name="CONTACT_NUMBER", length = 100)
 	private Long contactNum;
 	
-	public Integer getContactId() {
-		return contactId;
-	}
-	public void setContactId(Integer contactId) {
-		this.contactId = contactId;
-	}
-	public String getContactName() {
-		return contactName;
-	}
-	public void setContactName(String contactName) {
-		this.contactName = contactName;
-	}
-	public Long getContactNum() {
-		return contactNum;
-	}
-	public void setContactNum(Long contactNum) {
-		this.contactNum = contactNum;
-	}
+
 
 }
