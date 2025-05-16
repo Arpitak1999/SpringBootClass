@@ -24,11 +24,11 @@ public interface UsersRepo extends CrudRepository<Users, Integer> {
     @Query(value ="select * from users", nativeQuery = true)
     public List<Users> getAllUsers();
     
-//    @Query(value="FROM Users")
-//    public List<Users> getAllUsersHQL();
-//   
-//    @Query(value="delete from users where uid = :id")
-//    @Transactional
-//    @Modifying
-//    public List<Users> deleteAllUsersByHQL(Integer id);
+    @Query(value="FROM Users")
+    public List<Users> getAllUsersHQL();
+   
+    @Query(value="delete from Users where uid =:id")
+    @Transactional
+    @Modifying
+    public void deleteUsersByHQL(Integer id);
 }

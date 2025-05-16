@@ -22,11 +22,11 @@ public class DataJpaTestApplication {
 	//userService.getAllUser();
 	//userService.existById();
 	//userService.deleteUser();
-	userService.getUserByGender();
+	//userService.getUserByGender();
 	//userService.getUserByCountry();
 	//userService.getUserByAge();
 	//userService.getAllUserByHQL();
-	//userService.deleteByHQL();
+	userService.deleteByHQL();
 	}
 
 }
