@@ -96,12 +96,12 @@ public class UsersService {
 		findByAge.forEach(System.out::println);
 	}
 	
-//	public void getAllUserByHQL() {
-//		List<Users> allUserHQL=userRepo.getAllUsersHQL();
-//		allUserHQL.forEach(System.out::println);
-//	}
-//	public void deleteByHQL() {
-//		userRepo.deleteAllUsersByHQL(2);
-//		
-//	}
+	public void getAllUserByHQL() {
+		List<Users> allUserHQL=userRepo.getAllUsersHQL();
+		allUserHQL.forEach(System.out::println);
+	}
+	public void deleteByHQL() {
+		userRepo.deleteUsersByHQL(2);
+		
+	}
 }
