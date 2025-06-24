@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEB MVC </title>
+  </head>
+  <body>
+    <div class ="container">
+		<h2>Login</h2>
+		<font style="color: aqua;">
+			<p th:text="${msg}"></p>
+		</font>
+		<form action="login" th:object="${user}" method="post">
+			<table>
+				<tr>
+					<td>Email:</td>
+					<td><input type ="text" th:field="*{email}" ></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type ="password" th:field="*{pwd}" ></td>
+					
+				</tr>
+				<tr>
+				    <td><input type="submit" value="Login" class="btn btn-primary"></td>
+				
+				</tr>
+		     </table>
+		</form>	
+	</div>
+  </body>
+</html>
