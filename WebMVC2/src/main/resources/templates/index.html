@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEB MVC </title>
+  </head>
+  <body>
+    <div class ="container">
+		<h2>User Form</h2>
+		<font style="color: aqua;">
+			<p th:text="${msg}"></p>
+		</font>
+		<form action="user-submit" th:object="${user}" method="post">
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type ="text" th:field="*{name}" ></td>
+					<td>
+						<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type ="email" th:field="*{email}" ></td>
+					<td>
+					    <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="text-danger"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Phno:</td>
+					<td><input type ="text" th:field="*{phno}" ></td>
+					<td>
+						<p th:if="${#fields.hasErrors('phno')}" th:errors="*{phno}" class="text-danger"/>
+					</td>
+				</tr>
+				<tr>
+				    <td><input type="submit" value="Submit" class="btn btn-primary"></td>
+				
+				</tr>
+		     </table>
+		</form>	
+	</div>
+  </body>
+</html>
