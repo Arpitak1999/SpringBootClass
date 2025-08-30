@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ExceptionHandler
+server:
+  port: 8080
+logging:
+  level:
+    root: DEBUG
+app:  
+  messages:
+    greet: Good Morning
+    welcome: Welcome to the pages
+    invaidLogin: "Invalid Login"
+    reqSuccess: "Registration Successful"
+    invalidEmail: "Email invalid"
