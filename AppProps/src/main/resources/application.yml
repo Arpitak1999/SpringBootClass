@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: AppProps
+app:
+  messages:
+    greet: "Hello !!!"
+    welcome: "Welcome to the page"
+    invaidLogin: "Invalid Login"
+    reqSuccess: "Registration Successful"
+    invalidEmail: "Email invalid"
+server:
+  port: 9090

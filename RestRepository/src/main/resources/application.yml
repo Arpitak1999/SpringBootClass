@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: RestRepository
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: arpita
+    password: arpita123
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
