@@ -28,7 +28,7 @@ public class MsgController {
 					
 		String welcomeMsg=messages.get("welcome");
 		
-		String msg =name +" Welcome to the AWS hosted application  "+ welcomeMsg;
+		String msg =name +" Welcome to the AWS hosted application new  "+ welcomeMsg;
 		
 		return new ResponseEntity<>(msg,HttpStatus.OK);
 	}
