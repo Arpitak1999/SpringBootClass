@@ -26,7 +26,7 @@ public class MsgController {
 	    
 	    System.out.println(messages);
 					
-		String welcomeMsg=messages.get("greet");
+		String welcomeMsg=messages.get("welcome");
 		
 		String msg =name +" Welcome to the AWS hosted application  "+ welcomeMsg;
 		
