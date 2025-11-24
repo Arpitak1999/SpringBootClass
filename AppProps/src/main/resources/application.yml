@@ -3,7 +3,7 @@ spring:
     name: AppProps
 app:
   messages:
-    greet: "Hello !!!"
+    greet: "Hello in the AWS host!!!"
     welcome: "Welcome to the page"
     invaidLogin: "Invalid Login"
     reqSuccess: "Registration Successful"
